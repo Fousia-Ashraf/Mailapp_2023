@@ -1,0 +1,76 @@
+
+
+<div class="container">
+    <h2 style="color: blue;"><i class='bx bxs-envelope'></i>mymail</h2>
+    <h5 style="margin-right:10px;text-align:end;color: blue;font-family:Georgia, 'Times New Roman', Times, serif">
+        <span style="color: black;">
+            <i
+            class='bx bx-user '></i>
+            User:
+        </span > {{user}}</h5>
+        <div style="text-align: end;" class="mb-5 ">
+            <button type="submit" (click)="logout()" class="btn btn-danger me-3">Log Out</button>
+        </div>
+
+    <div>
+        
+        <hr />
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <button type="button" (click)="compose()" class="btn btn-success"><i class="fa-regular fa-plus"></i>Compose</button>
+                <hr />
+                <ul class="nav ">
+                    <li class="active"><Button type="button" (click)="inbox()" class="btn btn-primary m-2"><i class="fa fa-inbox"></i>Inbox</Button>
+                    </li>
+                    <li class=""><Button (click)="sendData()"type="button"  class="btn btn-primary m-2"><i class='bx bx-send'></i>sent mail</Button>
+                    </li>
+
+
+                    <li class=""><Button (click)="draft()" class="btn btn-primary m-2"><i class="fa fa-envelopes-bulk"></i>Drafts</Button></li>
+
+                </ul>
+            </div>
+            
+            <div  class="col-sm-9 col-md-10">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li><div class="btn btn-outline-primary">Primary</div></li>
+
+                    <li><div class="btn btn-outline-primary">Social</div></li>
+                    <li><div class="btn btn-outline-primary">Promotions</div></li>
+
+                    <li><div class="btn btn-outline-primary">+</div></li>
+                </ul>
+                
+<!-- content of mail -->
+    <div class="container">
+        <table class="table table-bordered table-condensed">
+            <tbody>
+                <tr>
+                    <td>
+                        
+                        beevi@gmail.com</td>
+                    <td>Have you reached campus?</td>
+                    <td>2020-02-03</td>
+                </tr>
+                <tr>
+                    <td>ashraf@gmail.com</td>
+                    <td>Mole,where are you</td>
+                    <td>2017-02-04</td>
+                </tr>
+                <tr>
+                    <td>umma@gmail.com</td>
+                    <td>Don't forget to clean your house.</td>
+                    <td>2023-02-03</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+            </div>
+        </div>
+        
+    </div>
+</div>

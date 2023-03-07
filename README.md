@@ -1,3 +1,16 @@
+ Created a mail service web application with the basic functionalities using angular for frontend and using Local storage for the storage purpose.
+
+note:
+it's not a networked app the aim of this project is to design object-oriented model and to use different design patterns for better design
+
+the basic functionalities include:
+-Composing and Drafts.
+-Inbox (default)
+-Sent
+-Drafts
+
+
+
 # Mailfousia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
@@ -25,3 +38,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+

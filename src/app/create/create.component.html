@@ -1,0 +1,25 @@
+<div class="container w-50 border border-dark  text-center p-3 " style="margin-top:80px;background-color:rgba(236, 232, 232, 0.479);border-radius: 0px;">
+    <h3 class="text-primary text-center">Create your mymail Account</h3>
+    <form [formGroup]="createForm"  action="" (ngSubmit)="create()"> <!--[]=prperties,()=event-->
+        
+        <div class="p-2 mb-2">
+            <input formControlName="acn"    name="acno2" ID="baccnt2" style="color: black;border:1px solid #9b9090 ;" class="form-control" type="text" placeholder="your mail Id" >
+    
+        </div>
+        <div  *ngIf="this.createForm.get('acn')?.errors && this.createForm.get('acn')?.touched" >
+            <p class="text-danger">enter correct mymailformat abc@gmail.com</p>
+        </div>
+        <div class="p-2 mb-2">
+            <input formControlName="psw"    name="pswrd2" id="bpswd2" style="color: black;border:1px solid #9b9090 ;" class="form-control" type="password" placeholder="create your Password">
+    
+        </div>
+        <div *ngIf="this.createForm.get('psw')?.errors && this.createForm.get('psw')?.touched" >
+            <p class="text-danger">accept only numbers and characters</p>
+        </div>
+        <div class="p-2 mb-2">
+            <button type="submit" class="btn btn-success">create</button>
+        </div>
+        
+    </form>
+    </div>
+

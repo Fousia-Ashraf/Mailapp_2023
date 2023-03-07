@@ -1,0 +1,32 @@
+
+<!--  run the app in http://localhost:4200/ -->
+
+<h1 class="text text-center ms-2 p-3 mt-5" style="color: blue;"><i class='bx bxs-envelope'></i>mymail</h1>
+
+<div class="container w-50 border border  text-center p-3" style="background-color:rgba(0, 0, 0, );border-radius: 12px;">
+<h4 class="text text-center">Sign into your mymail account</h4>
+<form [formGroup]="loginForm" action="" (ngSubmit)="login()" >
+    <div class="p-2 mb-2">
+        <input formControlName="acn" name="acno" ID="baccnt" style="color:#2e2c2c;border:1px solid #9b9090 ;" class="form-control" type="text" placeholder="Enter Your email" >
+
+    </div>
+    <div  *ngIf="this.loginForm.get('acn')?.errors && this.loginForm.get('acn')?.touched" >
+        <p class="text-danger">please enter your mymail </p>
+    </div>
+    <div class="p-2 mb-2">
+        <input formControlName="psw" type="password"   name="pswrd" id="bpswd" style="color:#272626;border:1px solid #9b9090 ;" class="form-control" type="text" placeholder="Enter Password">
+
+    </div>
+    <div  *ngIf="this.loginForm.get('psw')?.errors && this.loginForm.get('psw')?.touched" >
+        <p class="text-danger">please enter your password </p>
+    </div>
+    <div class="p-2 mb-2">
+        <button type="submit"    class="btn btn-primary">login</button>
+    </div>
+    <div class="p-2 mb-2 text">
+      New user ? <a style="text-decoration: none;color: rgb(14, 85, 7);" class=""   routerLink="create"><strong>Create your account</strong></a>
+    </div>
+</form>
+</div>
+	
+	
